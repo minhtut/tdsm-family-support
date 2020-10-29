@@ -54,7 +54,7 @@
         color="primary"
         v-model="$i18n.locale"
         :items="languages"
-        label="en"
+        label="EN"
         solo
         flat
       ></v-select>
@@ -67,7 +67,7 @@
     name: 'Appbar',
 
     data: () => ({
-      languages: [ 'en', 'my'],
+      languages: [ 'EN', 'MY'],
       items: [
         { name: 'nav-home', route: '/' },
         { name: 'nav-programs', route: '/programs' },
