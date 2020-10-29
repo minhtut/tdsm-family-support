@@ -1,6 +1,10 @@
 {
+  "nav-home": "မူရင်း",
   "nav-programs": "အစီအစဉ်များ",
   "nav-resource": "အသုံးပြုရန်",
   "nav-contact": "ဆက်သွယ်",
-  "message": "မင်္ဂလာပါ။"
+  "page-home": "ပထမစာမျက်နှာ။",
+  "page-programs": "ဒုတိယစာမျက်နှာ။",
+  "page-resource": "တတိယစာမျက်နှာ။",
+  "page-contact": "စတုတ်ထစာမျက်နှာ။"
 }

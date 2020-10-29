@@ -1,6 +1,10 @@
 {
+  "nav-home": "Home",
   "nav-programs": "Programs",
   "nav-resource": "Resource",
   "nav-contact": "Contact",
-  "message": "Hello."
+  "page-home": "First page.",
+  "page-programs": "Second page.",
+  "page-resource": "Third page.",
+  "page-contact": "Fourth page."
 }

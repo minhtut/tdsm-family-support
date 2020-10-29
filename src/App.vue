@@ -9,36 +9,38 @@
       <div class="d-flex align-center">
         <v-item-group>
           <v-select
-            item-color="primary"
+            color="primary"
             v-model="$i18n.locale"
             :items="languages"
             label="en"
             solo
           ></v-select>
-          <v-btn text><p>{{ $t('nav-programs') }}</p></v-btn>
-          <v-btn text><p>{{ $t('nav-resource') }}</p></v-btn>
-          <v-btn text><p>{{ $t('nav-contact') }}</p></v-btn>
+          <router-link to="/">
+            <v-btn text>{{ $t('nav-home') }}</v-btn>
+          </router-link>
+          <router-link to="/programs">
+            <v-btn text>{{ $t('nav-programs') }}</v-btn>
+          </router-link>
+          <router-link to="/resource">
+            <v-btn text>{{ $t('nav-resource') }}</v-btn>
+          </router-link>
+          <router-link to="/contact">
+            <v-btn text>{{ $t('nav-contact') }}</v-btn>
+          </router-link>
         </v-item-group>
       </div>
 
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <router-view/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
   name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
   data: () => ({
     languages: [ 'en', 'my']
   }),
