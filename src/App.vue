@@ -7,15 +7,17 @@
       height="120"
     >
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          src="@/assets/tdsm.png"
-        />
         <v-item-group>
-          <v-btn text>Programs</v-btn>
-          <v-btn text>Resource</v-btn>
-          <v-btn text>Contact</v-btn>
+          <v-select
+            item-color="primary"
+            v-model="$i18n.locale"
+            :items="languages"
+            label="en"
+            solo
+          ></v-select>
+          <v-btn text><p>{{ $t('nav-programs') }}</p></v-btn>
+          <v-btn text><p>{{ $t('nav-resource') }}</p></v-btn>
+          <v-btn text><p>{{ $t('nav-contact') }}</p></v-btn>
         </v-item-group>
       </div>
 
@@ -38,7 +40,7 @@ export default {
   },
 
   data: () => ({
-    languages: [ 'Burmese', 'English']
+    languages: [ 'en', 'my']
   }),
 };
 </script>
