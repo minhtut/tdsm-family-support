@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-footer dark padless>
-      <v-card class="flex" flat tile>
+      <v-card class="flex primary" flat tile>
         <v-card-title class="black justify-center">
           <v-btn
             v-for="(icon, index) in icons"
@@ -17,21 +17,20 @@
             </v-icon>
           </v-btn>
         </v-card-title>
-
+        <v-container>
         <v-card-text class="primary py-2 white--text text-center">
           <strong>Sitagu Dhamma Vihara</strong><br />
           <strong>32500 Lofton Ave.</strong><br />
           <strong>Chisago City, MN 55013</strong><br /><br />
           THE SITAGU THERAVADA DHAMMA SOCIETY OF MINNESOTA IS A REGISTERED
           501(C)(3) NON-PROFIT CORPORATION. REGISTRATION DOES NOT IMPLY
-          ENDORSEMENT, APPROVAL, OR RECOMMENDATION BY THE STATE. One hundred
-          percent (100%) of the donation is received by the Sitagu Theravada
-          Dhamma Society of Minnesota, registration ######.<br />
+          ENDORSEMENT, APPROVAL, OR RECOMMENDATION BY THE STATE.<br />
           <br />
           <strong
-            >&#169; {{ new Date().getFullYear() }} - TDSM Family Support</strong
+            >&#169; TDSM Web Team {{ new Date().getFullYear() }} - Family Support</strong
           >
         </v-card-text>
+        </v-container>
       </v-card>
     </v-footer>
   </div>

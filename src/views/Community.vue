@@ -7,5 +7,6 @@
 <script>
 export default {
   name: "Community",
+  data: () => ({}),
 };
 </script>

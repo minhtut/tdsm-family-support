@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <v-app-bar class="ma-0 pa-0" color="primary" dark>
+  <div class="primary">
+    <v-container>
+      <v-app-bar class="ma-0 pa-0" color="primary" dark flat>
       <v-btn dark @click.stop="drawer = !drawer" text class="hidden-sm-and-up">
         <v-icon x-large>mdi-menu</v-icon>
       </v-btn>
@@ -10,11 +11,11 @@
         <v-btn class="pa-0 ma-2" to="/programs" text>{{
           $t("features-programs")
         }}</v-btn>
-        <v-btn class="pa-0 ma-2" to="/resource" text>{{
-          $t("features-resource")
-        }}</v-btn>
         <v-btn class="pa-0 ma-2" to="/community" text>{{
           $t("features-community")
+        }}</v-btn>
+        <v-btn class="pa-0 ma-2" to="/resource" text>{{
+          $t("features-resource")
         }}</v-btn>
       </v-item-group>
       <v-btn class="pa-0 ma-2" text>
@@ -46,6 +47,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    </v-container>
   </div>
 </template>
 

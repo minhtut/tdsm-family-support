@@ -13,7 +13,7 @@
             <v-card
               dark
               tile
-              v-if="item.name != 'features-community'"
+              v-if="item.name != 'features-programs'"
               :to="item.url"
             >
               <v-card-title
@@ -23,7 +23,7 @@
               <v-img :src="item.photo" height="450"></v-img>
             </v-card>
 
-            <v-card dark tile v-if="item.name == 'features-community'">
+            <v-card dark tile v-if="item.name == 'features-programs'">
               <v-card-title
                 class="orange black--text lighten-1 justify-center ma-0 pa-1"
                 ><strong>{{ $t(item.name) }}</strong></v-card-title
@@ -52,7 +52,7 @@ export default {
     items: [
       {
         name: "features-programs",
-        photo: require("../assets/logo2.png"),
+        photo: require("../assets/logo1.png"),
         url: "/programs",
       },
       {
@@ -63,19 +63,19 @@ export default {
     ],
     community_photos: [
       {
-        src: require("../assets/community/community1.png"),
+        src: require("../assets/programs/programs1.png"),
       },
       {
-        src: require("../assets/community/community2.png"),
+        src: require("../assets/programs/programs2.png"),
       },
       {
-        src: require("../assets/community/community3.png"),
+        src: require("../assets/programs/programs3.png"),
       },
       {
-        src: require("../assets/community/community4.png"),
+        src: require("../assets/programs/programs4.png"),
       },
       {
-        src: require("../assets/community/community5.png"),
+        src: require("../assets/programs/programs5.png"),
       },
     ],
   }),
