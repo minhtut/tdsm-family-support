@@ -2,20 +2,20 @@
   <v-app>
     <Appbar />
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
     <Appfooter />
   </v-app>
 </template>
 
 <script>
-import Appbar from './components/Appbar'
-import Appfooter from './components/Appfooter'
+import Appbar from "./components/Appbar";
+import Appfooter from "./components/Appfooter";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Appbar,
-    Appfooter
-  }
+    Appfooter,
+  },
 };
 </script>

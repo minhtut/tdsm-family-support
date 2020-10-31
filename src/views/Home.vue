@@ -1,20 +1,19 @@
 <template>
-<div>
-  <Features />
-  <Events />
+  <div>
+    <Features />
+    <Events />
   </div>
 </template>
 
 <script>
-import Features from '../components/Features'
-import Events from '../components/Events'
+import Features from "../components/Features";
+import Events from "../components/Events";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Features,
-    Events
+    Events,
   },
-  data: () => ({
-  }),
-}
+  data: () => ({}),
+};
 </script>

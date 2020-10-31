@@ -1,11 +1,11 @@
 <template>
   <div class="community">
-      <p>{{ $t('page-community') }}</p> 
+    <p>{{ $t("page-community") }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Community',
-}
+  name: "Community",
+};
 </script>
