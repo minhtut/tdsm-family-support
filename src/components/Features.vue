@@ -2,7 +2,7 @@
 <div class="black">
 <v-container>
   <v-item-group>
-      <v-row>
+      <v-row no-gutters>
         <v-col
           class="ma-0 pa-2"
           v-for="(item, index) in items"
@@ -15,7 +15,7 @@
               tile
               :to="item.url"
             >
-              <v-card-title class="orange black--text lighten-1 justify-center"><strong>{{ $t(item.name) }}</strong></v-card-title>
+              <v-card-title class="orange black--text lighten-1 justify-center pa-1"><strong>{{ $t(item.name) }}</strong></v-card-title>
               <v-img :src="item.photo" height="400"></v-img>
               
             </v-card>
