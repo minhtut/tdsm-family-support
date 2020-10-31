@@ -1,8 +1,8 @@
 <template>
   <div >
     <v-app-bar
+      class="ma-0 pa-0"
       color="primary"
-      height="100"
       dark
     >
 
@@ -10,20 +10,26 @@
         <v-icon x-large>mdi-menu</v-icon>
       </v-btn>
       <v-spacer></v-spacer>
-			<v-btn class="hidden-xs-only" text to="/"><strong>{{ $t('home') }}</strong></v-btn>
-      <v-container style="width:110px">
-        <v-select
-          style="height:40px"
-          background-color="primary"
-          :items="languages"
-          v-model="$i18n.locale"
-          label="EN"
-          dense
-          solo
-          flat
-        >
-        </v-select>
-      </v-container>
+      <v-item-group class="hidden-xs-only pa-0 ma-0">
+        <v-btn class="pa-0 ma-2" to="/" text>{{ $t('home') }}</v-btn>
+        <v-btn class="pa-0 ma-2" to="/programs" text>{{ $t('features-programs') }}</v-btn>
+        <v-btn class="pa-0 ma-2" to="/resource" text>{{ $t('features-resource') }}</v-btn>
+        <v-btn class="pa-0 ma-2" to="/community" text>{{ $t('features-community') }}</v-btn>
+    </v-item-group>   
+    <v-btn class="pa-0 ma-2" text>
+            <v-select
+              style="height:40px;width:100px"
+              background-color="primary"
+              :items="languages"
+              v-model="$i18n.locale"
+              label="EN"
+              dense
+              solo
+              flat
+              outlined
+            >
+            </v-select>
+        </v-btn>     
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary left>
       <v-list
