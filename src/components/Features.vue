@@ -4,11 +4,11 @@
       <v-item-group>
         <v-row no-gutters>
           <v-col
-            class="ma-0 pa-1"
+            class="ma-0 pa-2"
             v-for="(item, index) in items"
             :key="index"
             cols="12"
-            md="4"
+            md="6"
           >
             <v-card
               dark
@@ -20,7 +20,7 @@
                 class="orange black--text lighten-1 justify-center ma-0 pa-1"
                 ><strong>{{ $t(item.name) }}</strong></v-card-title
               >
-              <v-img :src="item.photo" height="400"></v-img>
+              <v-img :src="item.photo" height="450"></v-img>
             </v-card>
 
             <v-card dark tile v-if="item.name == 'features-community'">
@@ -28,7 +28,7 @@
                 class="orange black--text lighten-1 justify-center ma-0 pa-1"
                 ><strong>{{ $t(item.name) }}</strong></v-card-title
               >
-              <v-carousel hide-delimiters cycle height="400">
+              <v-carousel hide-delimiters cycle height="450">
                 <v-carousel-item
                   v-for="(photo, i) in community_photos"
                   :key="i"
@@ -54,11 +54,6 @@ export default {
         name: "features-programs",
         photo: require("../assets/logo2.png"),
         url: "/programs",
-      },
-      {
-        name: "features-resource",
-        photo: require("../assets/logo3.png"),
-        url: "/resource",
       },
       {
         name: "features-community",
