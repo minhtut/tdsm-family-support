@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Programs from '../views/Programs.vue'
 import Resource from '../views/Resource.vue'
-import Contact from '../views/Contact.vue'
+import Community from '../views/Community.vue'
 
 Vue.use(VueRouter)
 
@@ -14,6 +14,11 @@ const routes = [
     component: Home
   },
   {
+    path: '/community',
+    name: 'Community',
+    component: Community
+  },
+  {
     path: '/programs',
     name: 'Programs',
     component: Programs
@@ -22,11 +27,6 @@ const routes = [
     path: '/resource',
     name: 'Resource',
     component: Resource
-  },
-  {
-    path: '/contact',
-    name: 'Contace',
-    component: Contact
   }
 ]
 

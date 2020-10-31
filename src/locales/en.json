@@ -1,18 +1,13 @@
 {
-  "nav-home": "Home",
-  "nav-programs": "Programs",
-  "nav-resource": "Resource",
-  "nav-contact": "Contact",
-  "page-home": "First page.",
-  "page-programs": "Second page.",
-  "page-resource": "Third page.",
-  "page-contact": "Fourth page.",
+  "home": "Home",
 
-  "home-mission": "Mission",
-  "home-mission-community": "Community Care",
-  "home-mission-culture": "Culture & Belonging",
-  "home-impact": "Results",
-  "home-impact-story": "Story 1",
-  "home-announcement": "Announcements",
-  "home-announcement-1": "Announcement"
+  "features-programs": "Programs",
+  "features-resource": "Resource",
+  "features-community": "Community",
+
+  "group-events": "Events",
+
+  "page-programs": "Programs page.",
+  "page-resource": "Resource page.",
+  "page-community": "Community page."
 }

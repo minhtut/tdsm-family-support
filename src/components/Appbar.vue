@@ -2,7 +2,7 @@
   <div>
     <v-app-bar
       color="primary"
-      height="110"
+      height="100"
       dark
     >
       <v-menu
@@ -20,25 +20,8 @@
           </v-list-item>
         </v-list>
       </v-menu>
-
-      <v-item-group class="hidden-xs-only">
-        <router-link to="/">
-          <v-btn text>{{ $t('nav-home') }}</v-btn> 
-        </router-link>
-        <router-link to="/programs">
-          <v-btn text>{{ $t('nav-programs') }}</v-btn>
-        </router-link>
-        <router-link to="/resource">
-          <v-btn text>{{ $t('nav-resource') }}</v-btn>
-        </router-link>
-        <router-link to="/contact">
-          <v-btn text>{{ $t('nav-contact') }}</v-btn>
-        </router-link>
-      </v-item-group>
-
       <v-spacer></v-spacer>
-
-      <v-container fluid style="width:110px">
+      <v-container style="width:110px">
         <v-select
           style="height:40px"
           background-color="primary"
@@ -62,10 +45,10 @@
     data: () => ({
       languages: [ 'EN', 'MY'],
       items: [
-        { name: 'nav-home', route: '/' },
-        { name: 'nav-programs', route: '/programs' },
-        { name: 'nav-resource', route: '/resource' },
-        { name: 'nav-contact', route: '/contact' }
+        { name: 'home', route: '/' },
+        { name: 'features-programs', route: '/programs' },
+        { name: 'features-resource', route: '/resource' },
+        { name: 'features-community', route: '/community' }
       ],
     }),
   }

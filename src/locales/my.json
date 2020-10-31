@@ -1,18 +1,13 @@
 {
-  "nav-home": "မူရင်း",
-  "nav-programs": "အစီအစဉ်များ",
-  "nav-resource": "အသုံးပြုရန်",
-  "nav-contact": "ဆက်သွယ်ရန်",
-  "page-home": "ပထမစာမျက်နှာ။",
+  "home": "မူရင်း",
+
+  "features-programs": "အစီအစဉ်များ",
+  "features-resource": "အသုံးပြုရန်",
+  "features-community": "အသိုင်းအဝိုင်း",
+
+  "group-events": "အဖွဲ့အချိန်ဇယား",
+
   "page-programs": "အစီအစဉ် မျက်နှာ။",
   "page-resource": "အသုံးပြု စာမျက်နှာ။",
-  "page-contact": "ဆက်သွယ် စာမျက်နှာ။",
-
-  "home-mission": "ပုံမှန်",
-  "home-mission-community": "ရပ်ရွာအလုပ်",
-  "home-mission-culture": "ယဉ်ကျေးမှု",
-  "home-impact": "ရလဒ်",
-  "home-impact-story": "ဆောင်းပါး",
-  "home-announcement": "ကြေညာချက်များ",
-  "home-announcement-1": "ကြေညာချက်"
+  "page-community": "အသိုင်းအဝိုင်း စာမျက်နှာ။"
 }
