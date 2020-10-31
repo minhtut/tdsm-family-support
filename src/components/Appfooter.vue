@@ -11,8 +11,8 @@
       <v-card-title class="teal justify-center">
        
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
+          v-for="(icon, index) in icons"
+          :key="index"
           class="mx-8"
           dark
           icon
