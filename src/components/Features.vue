@@ -10,27 +10,14 @@
             cols="12"
             md="6"
           >
-            <v-card
-              dark
-              tile
-              v-if="item.name != 'features-programs'"
-              :to="item.url"
-            >
+            <v-card dark tile>
               <v-card-title
                 class="orange black--text lighten-1 justify-center ma-0 pa-1"
                 ><strong>{{ $t(item.name) }}</strong></v-card-title
               >
-              <v-img :src="item.photo" height="450"></v-img>
-            </v-card>
-
-            <v-card dark tile v-if="item.name == 'features-programs'">
-              <v-card-title
-                class="orange black--text lighten-1 justify-center ma-0 pa-1"
-                ><strong>{{ $t(item.name) }}</strong></v-card-title
-              >
-              <v-carousel hide-delimiters cycle height="450">
+              <v-carousel hide-delimiters cycle height="450" :interval="item.interval">
                 <v-carousel-item
-                  v-for="(photo, i) in community_photos"
+                  v-for="(photo, i) in item.photos"
                   :key="i"
                   :src="photo.src"
                   reverse-transition="fade-transition"
@@ -54,28 +41,21 @@ export default {
         name: "features-programs",
         photo: require("../assets/logo1.png"),
         url: "/programs",
+        interval: 5000,
+        photos: [
+          { src: require("../assets/programs/programs1.png") },
+          { src: require("../assets/programs/programs2.png") }
+        ],
       },
       {
         name: "features-community",
         photo: require("../assets/logo1.png"),
         url: "/community",
-      },
-    ],
-    community_photos: [
-      {
-        src: require("../assets/programs/programs1.png"),
-      },
-      {
-        src: require("../assets/programs/programs2.png"),
-      },
-      {
-        src: require("../assets/programs/programs3.png"),
-      },
-      {
-        src: require("../assets/programs/programs4.png"),
-      },
-      {
-        src: require("../assets/programs/programs5.png"),
+        interval: 3000,
+        photos: [
+          { src: require("../assets/community/community1.png") },
+          { src: require("../assets/community/community2.png") }
+        ],
       },
     ],
   }),
