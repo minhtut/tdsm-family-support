@@ -125,7 +125,7 @@ export default {
     events: [],
     colors: [
       "red",
-      "blue",
+      "orange",
       "indigo",
       "deep-purple",
       "cyan",
@@ -135,6 +135,7 @@ export default {
     ],
     names: [
       "Meeting",
+      "Web Team Meeting",
       "Holiday",
       "PTO",
       "Travel",
@@ -199,6 +200,42 @@ export default {
         start: new Date(2020, 10, 21, 20, 0, 0, 0),
         end: new Date(2020, 10, 21, 21, 0, 0, 0),
         color: this.colors[0],
+        timed: 1,
+      });
+
+      events.push({
+        name: this.names[1],
+        start: new Date(2020, 10, 6, 20, 0, 0, 0),
+        end: new Date(2020, 10, 6, 21, 0, 0, 0),
+        color: this.colors[1],
+        details: "Ko Htwe<br>Myat Aung<br>Min Htut<br>The meeting will be held at https://discord.gg/w7k4yxAZ.",
+        timed: 1,
+      });
+
+      events.push({
+        name: this.names[1],
+        start: new Date(2020, 10, 13, 20, 0, 0, 0),
+        end: new Date(2020, 10, 13, 21, 0, 0, 0),
+        color: this.colors[1],
+        details: "Ko Htwe<br>Myat Aung<br>Min Htut<br>The meeting will be held at https://discord.gg/w7k4yxAZ.",
+        timed: 1,
+      });
+
+      events.push({
+        name: this.names[1],
+        start: new Date(2020, 10, 20, 20, 0, 0, 0),
+        end: new Date(2020, 10, 20, 21, 0, 0, 0),
+        color: this.colors[1],
+        details: "Ko Htwe<br>Myat Aung<br>Min Htut<br>The meeting will be held at https://discord.gg/w7k4yxAZ.",
+        timed: 1,
+      });
+
+      events.push({
+        name: this.names[1],
+        start: new Date(2020, 10, 27, 20, 0, 0, 0),
+        end: new Date(2020, 10, 27, 21, 0, 0, 0),
+        color: this.colors[1],
+        details: "Ko Htwe<br>Myat Aung<br>Min Htut<br>The meeting will be held at https://discord.gg/w7k4yxAZ.",
         timed: 1,
       });
 
