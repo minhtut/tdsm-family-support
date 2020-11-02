@@ -20,8 +20,8 @@
                   v-for="(photo, i) in item.photos"
                   :key="i"
                   :src="photo.src"
-                  reverse-transition="fade-transition"
-                  transition="fade-transition"
+                  reverse-transition="scale-transition"
+                  transition="slide-y-reverse-transition"
                 ></v-carousel-item>
               </v-carousel>
             </v-card>
@@ -41,7 +41,7 @@ export default {
         name: "features-programs",
         photo: require("../assets/logo1.png"),
         url: "/programs",
-        interval: 5000,
+        interval: 10000,
         photos: [
           { src: require("../assets/programs/programs1.png") },
           { src: require("../assets/programs/programs2.png") }
@@ -51,7 +51,7 @@ export default {
         name: "features-community",
         photo: require("../assets/logo1.png"),
         url: "/community",
-        interval: 3000,
+        interval: 5000,
         photos: [
           { src: require("../assets/community/community1.png") },
           { src: require("../assets/community/community2.png") }
